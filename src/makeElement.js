@@ -1,6 +1,8 @@
-const makeNewElement = (type, id, HTMLClass = '', text = '') =>{
+const makeNewElement = (type, id='', HTMLClass = '', text = '') =>{
     const newElem = document.createElement(type);
-    newElem.setAttribute("id", id);
+    if(id != ''){
+        newElem.setAttribute("id", id);
+    }
     if(HTMLClass != ''){
         newElem.setAttribute('class', HTMLClass);
     }
