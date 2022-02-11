@@ -24,7 +24,7 @@ const homeSetUp = ()=>{
     
     
     const intro = makeNewElement('div', 'intro', 'page-info', 
-        `Come on down for the best meals of your life! When Jessy Bowers first picked up a pan, the world was forever changed. Spanning a wide variety of vetegarian and pescatarian eats, you wont dare be disappointed in a single dish. It's not physically possible to say no to this food. You won't believe your taste buds when they sing out after just one bite.`);
+        `Come on down for the best meals of your life! When Jessy Bowers first picked up a pan, the world was forever changed. Spanning a wide variety of vegetarian and pescatarian eats, you won't dare be disappointed in a single dish. It's not physically possible to say no to this food. You won't believe your taste buds when they sing out after just one bite.`);
     const aboutJessy = makeNewElement('div', 'about-jessy', 'page-info', 
         `Jessy Bowers grew up in the wilderness of Alaska where she learned to forage for greens and catch wild fish. Now, she grows and harvests her own grains and vegetables fresh every day for you to delight in. Each piece of fish you put in your mouth was wild caught off the coast of Oregon within 2 hours of hitting your plate. There literally could not be any food fresher or more ethically sourced than this food. In fact, if you can find another restaurant that can beat us out, we'll give you your food on the house.`);
     

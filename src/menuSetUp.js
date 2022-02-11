@@ -125,6 +125,7 @@ const menuSetUp = () =>{
     scallopsCont.appendChild(scallopsImg);
     scallopsCont.appendChild(makeNewElement('div', 'scallops-description', 'menu-description page-info', 'Green Curry Scallops: Creamy coconut green curry sauce with buttery scallops topped with a mango cilantro salsa on a bed a fluffy jasmine rice.'));
     scallopsCont.appendChild(makeNewElement('div', 'scallops-price', 'menu-price', '$14.00'));
+    seafoodContainer.appendChild(scallopsCont);
     seafoodCategory.appendChild(seafoodContainer);
 
 
