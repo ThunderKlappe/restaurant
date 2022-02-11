@@ -2,6 +2,7 @@ import './style.css';
 import setUpSite from './setUp';
 import homeSetUp from './homeSetUp';
 import contactSetUp from './contactSetUp';
+import menuSetUp from './menuSetUp';
 
 const Display =(()=>{
     setUpSite();
@@ -19,6 +20,9 @@ const Display =(()=>{
         }
         if(e.target.id == 'contact-tab-button'){
             contactSetUp();
+        }
+        if(e.target.id == 'menu-tab-button'){
+            menuSetUp();
         }
     }
 })();
