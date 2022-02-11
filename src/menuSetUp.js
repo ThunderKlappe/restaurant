@@ -10,7 +10,7 @@ import tacos from './assets/fish-tacos.jpg'
 import scallops from './assets/Green-Curry-Scallops.jpg'
 import orange from './assets/orange-tofu.jpg'
 import french from './assets/Portobello-French-Dip.jpg'
-import shrimp from './assets/Shrimp-and-Feta-Orzo.jpeg'
+import shrimp from './assets/Shrimp-and-Feta-Orzo.jpg'
 import sopa from './assets/Sopa-Tarasca.jpg'
 
 

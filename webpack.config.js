@@ -1,8 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: {
         index: './src/index.js',
     },
@@ -28,6 +30,28 @@ module.exports = {
             test: /\.(png|svg|jpg|jpeg|gif)$/i,
             type: 'asset/resource',
           },
+        ],
+    },
+    optimization: {
+        minimizer: [
+          // Extend default minimizer, i.e. `terser-webpack-plugin` for JS
+          "...",
+          // We recommend using only for the "production" mode
+          new ImageMinimizerPlugin({
+            minimizer: {
+              implementation: ImageMinimizerPlugin.imageminMinify,
+              options: {
+                plugins: [
+                  "imagemin-gifsicle",
+                  "imagemin-mozjpeg",
+                  "imagemin-pngquant",
+                  "imagemin-svgo",
+                ],
+              },
+            },
+            // Disable `loader`
+            loader: false,
+          }),
         ],
     },
 };
